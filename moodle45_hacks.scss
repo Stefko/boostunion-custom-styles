@@ -1,0 +1,42 @@
+
+/*
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * #
+*                                                                       *
+* project:       Moodle 4.5 Hacks                                       *
+* filename:      moodle45_hacks.scss                                    *
+* created on:    16-12-2024 - 10:57:12 GMT+1                            *
+* last modified: 16-12-2024 - 10:57:15 GMT+1                            *
+*                                                                       *
+* (c) 2024 Stefan Kohler - eMail: stefan.kohler@dhbw.de                 *
+*                                                                       *
+# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * #
+*/
+
+/************************************* BITTE UNBEDINGT BEACHTEN *************************************/
+
+//  Dieses Stylesheet ist lediglich eine Krücke um offensichtliche Darstellungsfehler in Moodle 4.5
+//  und den von uns verwendetet PlugIns TEMPORÄR zu korrigieren.
+//  Ziel soll es sein, dass die Fehler direkt in Moodle oder dem PlugIn behoben werden (Moodle-Forum,
+//  GitHub, PlugIn-Distributor).
+//  Es ist sozusagen CSS-gewordenes Ibuprofen ... kurzfristig eine Lösung, langfristig muss aber eine
+//  vernünftige Therapie her - Arzt und Apotheker usw ... ;-)
+
+/****************************************************************************************************/
+
+/* ========================================================
+   Verhindert, dass die dimensionslosen SVG-Icons in
+   Originalgröße dargestellt werden [OP/Moodle -> #16111]
+=========================================================== */
+
+.mod_questionnaire_questionspage {
+  #id_manageqcontainer {
+    input[type="image"] {
+      width: 12px !important;
+      height: auto;
+    }
+  }
+}
+
+body {
+  background-color: #c0ffea;
+}
